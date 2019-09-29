@@ -18,8 +18,6 @@ class User{
         return res.json();
     })
     .then((users)=>{
-        console.log(users.results);
-       
         this.userData(users.results);
         this.userPictureUrl( this.userData()[0].picture.large);
         this.getUserFullName();

@@ -127,4 +127,29 @@ a{
     margin-left: 37%;
     }
 }
-
+@media(max-width:400px){
+    .contentDiv .c-card .tab-row{
+        color: #439539;
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .contentDiv .c-card__subtitle {
+        font-weight: 400;
+        font-size: .875rem;
+        color: #8fa8ba;
+        padding-top: 15%;
+    }
+    .button{
+        margin-left: 30%
+    }
+    a{
+    display: inline-block;
+    margin-left: 30%;
+    }
+}
