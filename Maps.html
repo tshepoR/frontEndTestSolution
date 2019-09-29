@@ -18,9 +18,10 @@ function initMap() {
     debugger
   var locationAddressCords = JSON.parse(localStorage.getItem('coordinates'));
   var myLatLng = {lat:Number(locationAddressCords.latitude), lng: Number(locationAddressCords.longitude)}
+  var t ={lat:-25.9960845,lng:28.1029128}
 
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 5,
+    zoom: 17,
     center: myLatLng
   });
 
@@ -30,7 +31,7 @@ function initMap() {
     title: 'User address'
   });
 }
-
+  //GoogleAPI key Will expire in 2 days time. please do not steal it.lol
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6vvN0WC8OAbpCzBkGzav0jxqPOJeqY0Y&callback=initMap">

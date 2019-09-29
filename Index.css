@@ -95,7 +95,11 @@ body {
     height: 32px;
     cursor: pointer;
     margin-top: 4px;
-    margin-left: 50%;
+    margin-left: 44%;
+}
+a{
+    text-decoration: underline;
+    color: black;
 }
 @media(max-width:900px){
     .contentDiv .c-card .tab-row{
@@ -118,7 +122,9 @@ body {
     .button{
         margin-left: 40%
     }
+    a{
+    display: inline-block;
+    margin-left: 37%;
+    }
 }
-a{
-    text-decoration: none;
-}
+

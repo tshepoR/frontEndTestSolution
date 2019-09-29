@@ -1,5 +1,5 @@
 //Get random users, let's keep it easy and use fetch javascript method and use lightWeiht knockout Js libray,
-//angular or reactJs would be over kill for this solution.
+//angular or reactJs would be overkill for this solution.
 
 class User{
     constructor(){
@@ -9,10 +9,11 @@ class User{
         this.userPictureUrl=ko.observable();
         this.headTitle=ko.observable();
         this.isOnload=ko.observable(false);
+        this.randomUserUrl = ko.observable('https://randomuser.me/api/');
     }
     getRandomUsers =()=>{
 
-     fetch('https://randomuser.me/api/')
+     fetch(this.randomUserUrl())
     .then((res)=> {
         return res.json();
     })
